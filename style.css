@@ -1,0 +1,300 @@
+
+body {
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(pexels-photo4.jpg);
+	width: 100%;
+	background-attachment: fixed;
+	margin: 0px auto;
+}
+
+.header {
+	text-align: center;
+	margin-left: 800px;
+}
+
+li {
+  display: inline;
+  text-align: center;
+  margin: 0px auto;
+  padding: 0 5px;
+}
+
+ul {
+	display: inline-flex;
+	padding-left: 0px;
+	width: 400px;
+}
+
+a {
+	letter-spacing: 2px;
+	font-family: 'Questrial', sans-serif;
+	text-decoration: none;
+	color: #959595;
+	word-spacing: 10px;
+}
+
+a:hover {
+	color: white;
+
+}
+
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 4px;
+	width: 1px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: #B13030;
+}
+
+
+#container {
+	text-align: left;
+	margin-left: 50px;
+	position: fixed;
+}
+
+#container .text {
+
+	margin-top: 130px;
+	padding-left: 10px;
+	
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #B13030; }
+}
+
+#container .text h2 {
+	font-family: 'Poiret One', cursive;
+	font-size: 70px;
+	margin-top: -25px;
+	padding-left: 4px;
+	padding-bottom: 10px;
+	color: #b49463;
+	word-spacing: 10px;
+	letter-spacing: 6px;
+	margin-bottom: 0px;
+}
+
+
+#container .text h3 {
+	font-family: 'Poiret One', cursive;
+	font-size: 30px;
+	color: #b49463;
+	word-spacing: 8px;
+	letter-spacing: 4px;
+	margin-top: 6px;
+	padding-top: 20px;
+	padding-left: 6px;
+	border-right: 3px solid #24170f;
+	
+
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+  	border-right: .15em solid #B13030; /* The typwriter cursor */
+  	white-space: nowrap; /* Keeps the content on a single line */
+  	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  	letter-spacing: .15em; /* Adjust as needed */
+  	animation: 
+    typing 5.5s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+
+#button {
+	text-align: center;
+	margin-top: 370px;
+
+	margin-right: 800px;
+	word-spacing: 20px;
+}
+
+#button a {
+	font-family: 'Patrick Hand SC', cursive;
+}
+
+@media screen and (max-width:1279px) {
+	body {
+		width: 100%;
+	}
+	.header {
+		width: 100%;
+		margin-left: 0px;
+	}
+	#container {
+		width: 100%;
+	}
+	#button {
+		width: 50%;
+		text-align: center;
+	}
+	img {
+		width: 100%;
+	}
+
+}
+@media screen and (max-width:938px) {
+	#container .text h2 {
+		font-size: 40px;
+		text-align: center;
+		margin: 0px auto;
+		padding: 0px; 
+	}
+	#container .text h3 {
+		font-size: 20px;
+		text-align: center;
+		margin: 0px auto;
+		padding: 0px; 
+	}
+	.top h1 {
+		font-size: 40px;
+		text-align: center;
+		margin: 0px auto;
+		padding: 0px; 
+	}
+	.bottom h3 {
+		font-size: 20px;
+		text-align: center;
+		margin: 0px auto;
+		padding: 0px; 
+	}
+	.top2 h1 {
+		font-size: 40px;
+		text-align: center;
+		margin: 0px auto;
+		padding: 0px; 
+	}
+}
+
+/*For about me page*/
+.top {
+	padding-top: 15px;
+	padding-left: 10px;
+	text-align: left;
+	margin-left: 50px;
+	padding-right: 850px;
+}
+.top h1{
+	font-family: 'Poiret One', cursive;
+	font-size: 50px;
+	color: #b49463;
+	word-spacing: 8px;
+	letter-spacing: 4px;
+	margin-top: 6px;
+	padding-top: 20px;
+	padding-left: 6px;
+	border-right: 3px solid #24170f;
+	color: #b49463;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+  	border-right: .15em solid #B13030; /* The typwriter cursor */
+  	white-space: nowrap; /* Keeps the content on a single line */
+  	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  	letter-spacing: .15em; /* Adjust as needed */
+  	animation: 
+    typing 1.5s steps(12, end),
+    blink-caret .75s step-end infinite;
+}
+.bottom {
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-right: 200px;
+	margin-left: 50px;
+}
+.bottom h3{
+	font-family: 'Poiret One', cursive;
+	font-size: 25px;
+	color: #b49463;
+	letter-spacing: 5px;
+}
+
+
+/*for contact page*/
+.top2 h1{
+	font-family: 'Poiret One', cursive;
+	font-size: 50px;
+	color: #b49463;
+	word-spacing: 8px;
+	letter-spacing: 4px;
+	margin-top: 6px;
+	padding-top: 20px;
+	padding-left: 6px;
+	border-right: 3px solid #24170f;
+	color: #b49463;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+  	border-right: .15em solid #B13030; /* The typwriter cursor */
+  	white-space: nowrap; /* Keeps the content on a single line */
+  	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  	letter-spacing: .15em; /* Adjust as needed */
+  	animation: 
+    typing 1.5s steps(14, end),
+    blink-caret .75s step-end infinite;
+}
+.top2 {
+	padding-top: 15px;
+	padding-left: 10px;
+	text-align: left;
+	margin-left: 45px;
+	padding-right: 820px;
+}
+.bottom2 {
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-right: 200px;
+	margin-left: 50px;
+}
+
+.bottom2 h3{
+	font-family: 'Poiret One', cursive;
+	font-size: 25px;
+	color: #b49463;
+	letter-spacing: 5px;
+}
+
+#part1 img {
+	width: 50px;
+	padding-left: 25px;
+}
+#part2 {
+	padding-top: 20px;
+}
+#part2 img {
+	width: 50px;
+}
+#part2 ul{
+	margin-top: 2px;
+}
+#part3 h3 {
+	font-family: 'Poiret One', cursive;
+	font-size: 15px;
+	color: #b49463;
+	letter-spacing: 3px;
+	margin-bottom: 0px;
+}
+#part3 {
+	text-align: right;
+	padding-top: 40px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.bottom2 img:hover {
+     transform: scale(1.1);
+}​
